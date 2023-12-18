@@ -1,5 +1,0 @@
----
-title: "CV"
----
-
-More about this website.

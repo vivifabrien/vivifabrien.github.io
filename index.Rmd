@@ -11,7 +11,7 @@ links:
   - label: Email
     url: "mailto:v.fabry@fu-berlin.de"
   - label: CV
-    url: "https://docs.google.com/viewer?url=https://github.com/vivifabrien/home-station/raw/master/cv/CVVivienFabry.pdf"
+    url: "https://docs.google.com/viewer?url=https://github.com/vivifabrien/vivifabrien.github.io/raw/master/cv/CVVivienFabry.pdf"
 output:
   postcards::trestles
 ---
