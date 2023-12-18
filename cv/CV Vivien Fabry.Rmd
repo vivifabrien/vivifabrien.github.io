@@ -1,0 +1,142 @@
+---
+name: Vivien
+surname: Fabry
+position: "Curriculum Vitae"
+#profilepic: "img/pic.png"
+#address: "Tweede Oosterparkstraat 18-2, 1091JC Amsterdam, The Netherlands"
+#phone: +49 17682275236
+#www: 
+email: "v.fabry@fu-berlin.de"
+twitter: vivifabrien
+github: vivifabrien
+linkedin: vivien-fabry-a49552205
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+<!-- # Personal Info -->
+
+<!-- ```{r} -->
+<!-- library(tibble) -->
+<!-- tribble( -->
+<!--   ~ Info, ~ Answer, -->
+<!--   "Date and Place of Birth", "02.11.1998, Karlsruhe, Germany" -->
+<!-- ) %>%  -->
+<!--   brief_entries(Answer, Info) -->
+<!-- ``` -->
+
+# Current Position
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+   "Research Associate in Empirical Social Research, Department of Political and Social Science
+", "10.2023 - Present", "Free University Berlin", "Berlin, Germany",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  #"Secondary Education (Werkrealschule)", "09.2009 - 07.2015", "Walzbachschule Jöhlingen", "Jöhlingen, Germany",
+  #"Vocational Grammar School in Social Sciences (Sozialwissenschaftliches Berufliches Gymnasium)", "09.2015 - 07.2018", "Elisabeth-Selbert-Schule", "Karlsruhe, Germany",
+  "B.A. Social Sciences", "10.2018 - 07.2021", "University of Stuttgart", "Stuttgart, Germany",
+  "M.Sc. Social Sciences (research)", "09.2021 - 07.2023", "University of Amsterdam", "Amsterdam, The Netherlands",
+  "Ph.D. Candidate", "10.2023 - Present", "Free University Berlin", "Berlin, Germany",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Practical Experiences
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Research Assistant", "11.2019 - 07.2020", "Project Future Education Midwifery, Baden-Wuerttemberg Cooperative State University Stuttgart", "Stuttgart, Germany",
+  "Research Assistant for Regional Participation Data Base Project", "03.2021 - 06.2021", "University of Stuttgart", "Stuttgart, Germany",
+  "R Tutor, Computational Social Sciences Seminar (Master's)", "06.2021 - 09.2021", "University of Stuttgart", "Stuttgart, Germany",
+  "Research Internship in Political Science with Floris Vermeulen","04.2022 - 07.2022","University of Amsterdam","Amsterdam, The Netherlands",
+  "Research Assistant Position in the Project \"Public Interest Advocacy: Interest Group Framing and Responsiveness in Australian Policymaking\"","08.2022 - 12.2022","Australian National University","Canberra, Australia",
+  "Research Internship in Political Science with Tom van der Meer","09.2022 - 02.2023","University of Amsterdam","Amsterdam, The Netherlands"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Conferences and Summer Schools
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Politicologenetmaal 2022 - Presenter of \"Ecological regression as the alternative to surveys? Using neighborhood-level data to estimate turnout amongst ethnic minority groups in Amsterdam\"", "16.06.2022 - 17.06.2022", "Radboud University", "Nijmegen, The Netherlands",
+  "Attendee of the SPS Summer Academy 2022 - (In)equality, Democracy and Solidarity in Europe", "05.09.2022 - 09.09.2022", "European University Institute", "Florence, Italy",
+  "ICA Conference 2023 - Presenter of \"To gender or not to gender? Examining gender-inclusive language in the German Bundestag\"", "25.05.2023 - 29.05.2023", "International Communication Association (ICA)", "Toronto, Canada",
+   #"ECPR 2023 - Co-Author of \"Leveraging the Authority of Policy Advisory Systems: Cross-National Evidence from Legislative Speech\"", "04.09.2023 - 08.09.2023", "ECPR General Conference", "Prague, Czech Repulic",
+  "IASGP annual conference 2023 - Presenter of \"Representing the Unrepresented? - Using a mixed-method approach to examine political representation of people with disabilities in the German parliament\"", "29.10.2023 - 31.10.2023", "IASGP", "Mannheim, Germany",
+  "APSA Virtual Research Meeting 2024 - Presenter in the Panel \"Paths to Political Representation of Disabled People\"", "08.02.2024-09.02.2024", "American Political Science Association (APSA)", "Online Conference"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+
+```
+
+# Publications
+
+```{r publications} 
+bibliography_entries("ownpup.bib", "Publications") 
+
+``` 
+
+
+<!-- # Additional Experiences -->
+
+<!-- ```{r} -->
+<!-- library(tibble) -->
+<!-- tribble( -->
+<!--   ~ Degree, ~ Year, ~ Institution, ~ Where, -->
+<!--   #"Member of the Faculty Council of Economics and Social Sciences", "10.2019 - 10.2021", "University of Stuttgart", "Stuttgart, Germany", -->
+<!--   #"Member of the Student Parliament", "10.2019 - 10.2021", "University of Stuttgart", "Stuttgart, Germany", -->
+<!--   "Board Member", "10.2020 - 12.2021", "Funding Organization for Political and Social Sciences, FOEPS e.V", "Stuttgart, Germany", -->
+<!--   "Chair of the Student Council, Social Sciences", "10.2020 - 10.2021", "University of Stuttgart", "Stuttgart, Germany", -->
+<!--   "Member of the Social Comittee, Research Master Social Sciences", "07.2022 - 07.2023", "University of Amsterdam", "Amsterdam, The Netherlands" -->
+<!-- ) %>%  -->
+<!--   detailed_entries(Degree, Year, Institution, Where) -->
+
+<!-- ``` -->
+
+# Languages
+
+```{r}
+library(tibble)
+tribble(
+  ~ Year,  ~ Where, 
+  "German, English", "Fluent", 
+  "Spanish", "Conversational",
+  "Dutch", "Beginner",
+) %>% 
+  brief_entries(Year, Where)
+```
+
+# Software Skills
+
+```{r}
+library(tibble)
+tribble(
+  ~ Year,  ~ Where, 
+  "LaTeX, Microsoft Office, Python, R, Zotero", "Advanced",
+  "ATLAS.ti, Java, Jamovi, MAXQDA, Stata, SPSS, SQL", "Intermediate"
+) %>% 
+  brief_entries(Year, Where)
+```

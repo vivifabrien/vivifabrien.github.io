@@ -1,0 +1,21 @@
+---
+title: "Vivien Fabry"
+image: "img/ica2023_pic.jpg"
+links:
+  - label: Twitter
+    url: "https://twitter.com/ViviFabrien"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/vivien-fabry-a49552205/"
+  - label: GitHub
+    url: "https://github.com/vivifabrien"
+  - label: Email
+    url: "mailto:v.fabry@fu-berlin.de"
+  - label: CV
+    url: "https://docs.google.com/viewer?url=https://github.com/vivifabrien/home-station/raw/master/cv/CVVivienFabry.pdf"
+output:
+  postcards::trestles
+---
+ 
+## Bio
+
+Hello, my name is Vivien Fabry and I am a Ph.D. candidate and research associate in the political and social science faculty at the Free University in Berlin. I earned my M.Sc. in Social Sciences from the University of Amsterdam, laying the groundwork for my academic journey. My research focuses on computational methods, political behavior and disability politics. 
