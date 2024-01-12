@@ -1,0 +1,178 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{3873B3}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+
+% personal data
+\name{Vivien}{Fabry}
+\title{Curriculum Vitae}
+
+
+ % Phone number
+\email{\donothing{\href{mailto:v.fabry@fu-berlin.de}{\nolinkurl{v.fabry@fu-berlin.de}}}}
+ % Personal website
+\social[linkedin]{vivien-fabry-a49552205}
+\social[twitter]{vivifabrien}
+\social[github]{vivifabrien}
+
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+
+% Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\hypertarget{current-position}{%
+\section{Current Position}\label{current-position}}
+
+\nopagebreak
+    \cventry{10.2023 - Present}{Research Associate in Empirical Social Research, Department of Political and Social Science
+}{Free University Berlin}{Berlin, Germany}{}{\empty}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{10.2018 - 07.2021}{B.A. Social Sciences}{University of Stuttgart}{Stuttgart, Germany}{}{\empty}
+    \cventry{09.2021 - 07.2023}{M.Sc. Social Sciences (research)}{University of Amsterdam}{Amsterdam, The Netherlands}{}{\empty}
+    \cventry{10.2023 - Present}{Ph.D. Candidate}{Free University Berlin}{Berlin, Germany}{}{\empty}
+
+\hypertarget{practical-experiences}{%
+\section{Practical Experiences}\label{practical-experiences}}
+
+\nopagebreak
+    \cventry{11.2019 - 07.2020}{Research Assistant}{Project Future Education Midwifery, Baden-Wuerttemberg Cooperative State University Stuttgart}{Stuttgart, Germany}{}{\empty}
+    \cventry{03.2021 - 06.2021}{Research Assistant for Regional Participation Data Base Project}{University of Stuttgart}{Stuttgart, Germany}{}{\empty}
+    \cventry{06.2021 - 09.2021}{R Tutor, Computational Social Sciences Seminar (Master's)}{University of Stuttgart}{Stuttgart, Germany}{}{\empty}
+    \cventry{04.2022 - 07.2022}{Research Internship in Political Science with Floris Vermeulen}{University of Amsterdam}{Amsterdam, The Netherlands}{}{\empty}
+    \cventry{08.2022 - 12.2022}{Research Assistant Position in the Project ``Public Interest Advocacy: Interest Group Framing and Responsiveness in Australian Policymaking''}{Australian National University}{Canberra, Australia}{}{\empty}
+    \cventry{09.2022 - 02.2023}{Research Internship in Political Science with Tom van der Meer}{University of Amsterdam}{Amsterdam, The Netherlands}{}{\empty}
+
+\hypertarget{conferences-and-summer-schools}{%
+\section{Conferences and Summer
+Schools}\label{conferences-and-summer-schools}}
+
+\nopagebreak
+    \cventry{16.06.2022 - 17.06.2022}{Politicologenetmaal 2022 - Presenter of ``Ecological regression as the alternative to surveys? Using neighborhood-level data to estimate turnout amongst ethnic minority groups in Amsterdam''}{Radboud University}{Nijmegen, The Netherlands}{}{\empty}
+    \cventry{05.09.2022 - 09.09.2022}{Attendee of the SPS Summer Academy 2022 - (In)equality, Democracy and Solidarity in Europe}{European University Institute}{Florence, Italy}{}{\empty}
+    \cventry{25.05.2023 - 29.05.2023}{ICA Conference 2023 - Presenter of ``To gender or not to gender? Examining gender-inclusive language in the German Bundestag''}{International Communication Association (ICA)}{Toronto, Canada}{}{\empty}
+    \cventry{29.10.2023 - 31.10.2023}{IASGP annual conference 2023 - Presenter of ``Representing the Unrepresented? - Using a mixed-method approach to examine political representation of people with disabilities in the German parliament''}{IASGP}{Mannheim, Germany}{}{\empty}
+    \cventry{08.02.2024-09.02.2024}{APSA Virtual Research Meeting 2024 - Presenter in the Panel ``Paths to Political Representation of Disabled People''}{American Political Science Association (APSA)}{Online Conference}{}{\empty}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{refs-c1214957c65974e019b240f5e9b46c94}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-vandermeerDutchParliamentaryElection2023}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{van der Meer, T., \& Fabry, V. (2023). \emph{Dutch
+Parliamentary Election Study (DPES) Panel Data 2017-2021 (6 waves)}
+{[}Data set{]}. DANS Data Station Social Sciences and Humanities.
+\url{https://doi.org/10.17026/SS/BJKU4B}}
+
+\end{CSLReferences}
+
+\hypertarget{languages}{%
+\section{Languages}\label{languages}}
+
+\nopagebreak
+    \cvitem{Fluent}{German, English. }
+    \cvitem{Conversational}{Spanish. }
+    \cvitem{Beginner}{Dutch. }
+
+\hypertarget{software-skills}{%
+\section{Software Skills}\label{software-skills}}
+
+\nopagebreak
+    \cvitem{Advanced}{LaTeX, Microsoft Office, Python, R, Zotero. }
+    \cvitem{Intermediate}{ATLAS.ti, Java, Jamovi, MAXQDA, Stata, SPSS, SQL. }
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
